@@ -1,0 +1,54 @@
+= Commons
+~ Header
+    - Logo
+    + Navbar
+        - About
+        - Browse
+        - Share
+
+INDEX file
+    ~ Body
+        ~ Section
+            - Heading 1 Introduction
+            - Supporting Paragraph
+        ~ Section
+            - Browse
+            - Share
+
+Restaurants file
+    ~ Body
+        ~ Section
+            - Heading 1 Introduction
+            - Supporting Paragraph
+        ~ Section
+            - Button (Order)
+            ~ Section (Will be generated when user enters the input)
+                - Heading 2 Restaurant Name
+                - Restaurant Cuisine
+                - Restaurant Address
+                - Recommendation
+                - Link to detailed Page
+Recommend file
+    ~ Body
+        ~ Section
+            - Heading 1 Introduction
+        ~ Section
+            ~ Form
+                - Input (Restaurant Name)
+                - Input(Address)
+                - Input(Cuisine)
+                - Input(Restaurant Website)
+                - Input(Recommendation)
+                - Button(Share Restaurant)
+About file
+    ~ Body
+        ~ Section
+            - Heading 1 Introduction
+            - Supporting Paragraph
+        ~ Section
+            - Paragraph
+
+
+?? Properties
+Heading-Color - rgb(202,158,62)
+Paragraph-Color - rgb(95,83,58)

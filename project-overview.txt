@@ -1,0 +1,5 @@
+This webpage will generate user data with the help of express, ejs, MYSQl and offcourse html.
+
+- This project will be a multi-page application. 
+- This project will not use any libraries like react or vue or angular.
+ 

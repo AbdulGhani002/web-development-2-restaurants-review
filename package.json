@@ -1,0 +1,17 @@
+{
+  "name": "web-development-2-restaurants-review",
+  "version": "1.0.0",
+  "description": "A webpage for restaurant reviews.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Abdul Ghani",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
