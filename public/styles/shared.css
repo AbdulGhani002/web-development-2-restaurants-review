@@ -7,7 +7,7 @@ html {
 }
 body {
   background-color: rgb(250, 237, 208);
-  font-family: "Roboto Condensed", "Roboto", sans-serif;
+  font-family: "Roboto Slab", "Roboto", sans-serif;
 }
 
 /* Header */
@@ -25,6 +25,7 @@ section#title h1 a {
   padding: 1.6rem 3rem;
   font-size: 3.2rem;
   font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* Navbar */
@@ -46,4 +47,49 @@ section#nav-bar nav ul li a {
 }
 section#nav-bar nav ul li a:hover {
   background-color: rgb(245, 222, 173);
+}
+
+/* Article - Heading*/
+article {
+  margin: 4rem;
+}
+
+/* Heading */
+h1#heading {
+  color: rgb(202, 158, 62);
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Paragraph */
+
+article#description p {
+  color: rgb(95, 83, 58);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+article#container ul {
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article#container ul li a {
+  color: rgb(218, 205, 183);
+  padding: 5rem 3rem;
+  margin: 3rem;
+  line-height: 10rem;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(48, 42, 31);
+  border-radius: 1rem;
+}
+
+article#container ul li a:hover {
+  background-color: rgb(100, 81, 43);
 }
