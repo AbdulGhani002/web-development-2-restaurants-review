@@ -4,12 +4,21 @@ html {
 }
 * {
   box-sizing: border-box;
+  font-size: 2.4rem;
 }
 body {
   background-color: rgb(250, 237, 208);
   font-family: "Roboto Slab", "Roboto", sans-serif;
 }
 
+/* Main */
+
+main {
+  width: 95%;
+  max-width: 80rem;
+  margin: 3rem auto;
+  text-align: center;
+}
 /* Header */
 header {
   display: flex;
@@ -68,28 +77,4 @@ article#description p {
   color: rgb(95, 83, 58);
   font-size: 2.5rem;
   text-align: center;
-}
-
-article#container ul {
-  font-size: 2rem;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-article#container ul li a {
-  color: rgb(218, 205, 183);
-  padding: 5rem 3rem;
-  margin: 3rem;
-  line-height: 10rem;
-  text-decoration: none;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(48, 42, 31);
-  border-radius: 1rem;
-}
-
-article#container ul li a:hover {
-  background-color: rgb(100, 81, 43);
 }

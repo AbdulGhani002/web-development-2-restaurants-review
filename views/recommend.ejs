@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/images/android-chrome-192x192.png"
+      type="image/png"
+    />
+    <title>Orbotio - Make the world a tastier place!</title>
+    <link rel="stylesheet" href="/styles/shared.css" />
+    <link rel="stylesheet" href="/styles/recommend.css" />
+  </head>
+
+  <body>
+    <header>
+      <section id="title">
+        <h1>
+          <a href="/"> Orbotio</a>
+        </h1>
+      </section>
+      <section id="nav-bar">
+        <nav>
+          <ul>
+            <li>
+              <a href="/restaurants"> Browse Restaurants </a>
+            </li>
+            <li>
+              <a href="/recommend"> Share Restaurants </a>
+            </li>
+            <li>
+              <a href="/about"> About Orbot </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <article>
+        <form action="/recommend">
+          <label for="restaurant-name">Restaurant Name </label>
+          <input type="text" name="restaurant-name" id="restaurant-name" />
+          <label for="restaurant-address">Restaurant Name </label>
+          <input
+            type="text"
+            name="restaurant-address"
+            id="restaurant-address"
+          />
+          <label for="restaurant-cuisine">Restaurant Name </label>
+          <input
+            type="text"
+            name="restaurant-cuisine"
+            id="restaurant-cuisine"
+          />
+          <label for="restaurant-website">Restaurant Name </label>
+          <input
+            type="text"
+            name="restaurant-website"
+            id="restaurant-website"
+          />
+          <label for="restaurant-recommendation">Why dio you recommend it? </label>
+          <textarea
+            name="restaurant-recommendation"
+            id="restaurant-recommendation"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <button type="submit">Share restaurant</button>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>

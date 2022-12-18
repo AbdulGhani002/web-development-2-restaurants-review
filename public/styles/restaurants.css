@@ -1,0 +1,44 @@
+
+
+article ul li.restaurant-item {
+  list-style: none;
+  margin: 1.6rem 0;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(250, 233, 194);
+  color: rgb(110, 78, 7);
+  text-align: left;
+}
+
+article ul li.restaurant-item h2 {
+  font-family: "Roboto Slab", "Roboto", sans-serif;
+  font-size: 2.5rem;
+  margin: 0.4rem 0;
+}
+
+.restaurant-meta {
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-meta p {
+  color: rgb(170, 148, 95);
+}
+
+.restaurant-item p {
+  margin: 0.2rem 0;
+}
+
+.restaurant-actions {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.restaurant-actions a {
+  color: rgb(110, 78, 7);
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(202, 158, 62);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+}

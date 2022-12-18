@@ -1,0 +1,27 @@
+main {
+  width: 100%;
+  max-width: 100%;
+}
+article#container ul {
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article#container ul li a {
+  color: rgb(218, 205, 183);
+  padding: 5rem 3rem;
+  margin: 3rem;
+  line-height: 10rem;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(48, 42, 31);
+  border-radius: 1rem;
+}
+
+article#container ul li a:hover {
+  background-color: rgb(100, 81, 43);
+}
