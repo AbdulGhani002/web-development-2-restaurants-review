@@ -32,4 +32,9 @@ app.get("/about", function (req, res) {
   res.render(htmlPath);
 });
 
+app.get('/confirm', function(req,res){
+  const htmlPath = path.join(__dirname, "views", "about.ejs");
+  res.render(htmlPath);
+})
+
 app.listen(3000, console.log(`Listening on https://${localhost}:${port}`));

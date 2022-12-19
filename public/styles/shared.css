@@ -1,80 +1,154 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,400;1,700&family=Roboto+Slab:wght@400;700;900&display=swap");
-html {
-  font-size: 10px;
-}
-* {
-  box-sizing: border-box;
-  font-size: 2.4rem;
-}
 body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
   background-color: rgb(250, 237, 208);
-  font-family: "Roboto Slab", "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
-
-/* Main */
 
 main {
   width: 95%;
-  max-width: 80rem;
+  max-width: 50rem;
   margin: 3rem auto;
   text-align: center;
 }
-/* Header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+
+main h1 {
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  color:rgb(202, 158, 62);
 }
 
-section#title h1 a {
+main p {
+  color: rgb(95, 83, 58);
+}
+
+#main-header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+#logo {
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#logo a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 2.5rem;
   background-color: rgb(240, 167, 9);
   border-radius: 50%;
-  color: whitesmoke;
-  text-decoration: none;
-  padding: 1.6rem 3rem;
-  font-size: 3.2rem;
-  font-weight: bold;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
-/* Navbar */
-section#nav-bar nav ul {
-  list-style: none;
-  font-size: 2.2rem;
+#main-header nav {
+  display: none;
+}
+
+#main-header ul {
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Roboto Slab";
+  list-style: none;
 }
 
-section#nav-bar nav ul li a {
-  padding: 0.4rem 1.2rem;
-  margin: 0 2rem;
-  color: rgb(139, 100, 8);
-  text-decoration: none;
-  border-radius: 0.4rem;
+#main-header .nav-item {
+  margin-left: 1rem;
 }
-section#nav-bar nav ul li a:hover {
+
+#main-header .nav-item a {
+  text-decoration: none;
+  color: rgb(139, 100, 8);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+}
+
+#main-header .nav-item a:hover,
+#main-header .nav-item a:active {
   background-color: rgb(245, 222, 173);
 }
 
-/* Article - Heading*/
-article {
-  margin: 4rem;
+#drawer-btn {
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+  height: 2rem;
+  justify-content: space-around;
+  padding: 0.1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-/* Heading */
-h1#heading {
-  color: rgb(202, 158, 62);
-  font-size: 4rem;
-  text-align: center;
-  padding: 2rem;
+#drawer-btn span {
+  width: 2rem;
+  height: 2px;
+  background-color: rgb(119, 83, 5);
 }
 
-/* Paragraph */
+#mobile-drawer {
+  display: none;
+}
 
-article#description p {
-  color: rgb(95, 83, 58);
-  font-size: 2.5rem;
-  text-align: center;
+#mobile-drawer.open {
+  display: block;
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  background-color: rgb(43, 31, 5);
+}
+
+#mobile-drawer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 0;
+}
+
+#mobile-drawer .nav-item {
+  margin: 1.5rem 0;
+}
+
+#mobile-drawer .nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#mobile-drawer .nav-item a:hover,
+#mobile-drawer .nav-item a:active {
+  color: rgb(240, 167, 9);
+}
+
+@media (min-width: 60rem) {
+  #main-header {
+    padding: 0 5%;
+  }
+
+  #main-header nav {
+    display: block;
+  }
+
+  #drawer-btn {
+    display: none;
+  }
+
+  #mobile-drawer.open {
+    display: none;
+  }
+}
+
+
+@media (min-width: 80rem) {
+  #main-header {
+    padding: 0 15%;
+  }
 }
