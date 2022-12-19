@@ -1,40 +1,57 @@
 const express = require("express");
 
+const path = require("path");
+
+const fs = require("fs");
+
 const app = express();
 
 const localhost = "127.0.0.1";
 
 const port = 3000;
 
-const path = require("path");
-
 app.use(express.static("public"));
 
-app.get("/", function (req, res) {
-  const htmlPath = path.join(__dirname, "views", "index.ejs");
+app.use(express.urlencoded({ extended: false }));
 
-  res.render(htmlPath);
+app.set("views", path.join(__dirname, "views"));
+
+app.set("view engine", "ejs");
+
+app.get("/", function (req, res) {
+  res.render("index");
 });
 
 app.get("/restaurants", function (req, res) {
-  const htmlPath = path.join(__dirname, "views", "restaurants.ejs");
-
-  res.render(htmlPath);
+  res.render("restaurants");
 });
 
 app.get("/recommend", function (req, res) {
-  const htmlPath = path.join(__dirname, "views", "recommend.ejs");
-  res.render(htmlPath);
+  res.render("recommend");
 });
 
 app.get("/about", function (req, res) {
-  const htmlPath = path.join(__dirname, "views", "about.ejs");
-  res.render(htmlPath);
+  res.render("about");
 });
 
-app.get('/confirm', function(req,res){
-  const htmlPath = path.join(__dirname, "views", "about.ejs");
-  res.render(htmlPath);
-})
+app.get("/confirm", function (req, res) {
+  res.render("confirm");
+});
+
+app.post("/recommend", function (req, res) {
+  const restaurant = req.body;
+
+  const filePath = path.join(__dirname, "data", "restaurants.json");
+
+  const fileData = fs.readFileSync(filePath);
+
+  const storedRestaurants = JSON.parse(fileData);
+
+  storedRestaurants.push(restaurant);
+
+  fs.writeFileSync(filePath, JSON.stringify(storedRestaurants));
+
+  res.redirect("/confirm");
+});
 
 app.listen(3000, console.log(`Listening on https://${localhost}:${port}`));
