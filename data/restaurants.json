@@ -1,1 +1,16 @@
-[{"name":"Tesla Restaurant","address":"Tesla Street","cuisine":"Chinese","website":"https://www.github.com/AbdulGhani002","description":"The quality of food hers is best."}]
+[
+  {
+    "name": "Tesla Restaurant",
+    "address": "Tesla Street",
+    "cuisine": "Chinese",
+    "website": "https://www.github.com/AbdulGhani002",
+    "description": "The quality of food hers is best."
+  },
+  {
+    "name": "Restaurant",
+    "address": "No Address",
+    "cuisine": "Indian",
+    "website": "https://www.google.com",
+    "description": "Food quality is bad"
+  }
+]

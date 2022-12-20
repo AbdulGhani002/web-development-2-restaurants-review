@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   background-color: rgb(250, 237, 208);
   font-size: 1.5rem;
@@ -13,8 +13,8 @@ main {
 }
 
 main h1 {
-  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
-  color:rgb(202, 158, 62);
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
+  color: rgb(202, 158, 62);
 }
 
 main p {
@@ -32,7 +32,7 @@ main p {
 }
 
 #logo {
-  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -145,7 +145,6 @@ main p {
     display: none;
   }
 }
-
 
 @media (min-width: 80rem) {
   #main-header {
