@@ -5,35 +5,21 @@
     <link rel="stylesheet" href="styles/restaurants.css" />
   </head>
   <body>
-    <%- include('includes/header') %> 
+    <%- include('includes/header') %>
     <%- include('includes/side-drawer') %>
     <main>
       <h1>Recommended restaurants</h1>
-      <% if(numberOfRestaurants === 0){ %>
-      <p>
-        Unfortunately we have no restaurants yet - May be try recommending some.
-      </p>
-      <% } else{%>
-      <p>We found <%= numberOfRestaurants%> restaurants.</p>
-      <p>Find your next favorite restaurants with help of our other users!</p>
-      <ul id="restaurants-list">
-        <% for(let restaurant of restaurants){ %>
-        <li class="restaurant-item">
-          <article>
-            <h2><%= restaurant.name %></h2>
-            <div class="restaurant-meta">
-              <p><%= restaurant.cuisine %></p>
-              <p><%= restaurant.address %></p>
-            </div>
-            <p><%= restaurant.description %></p>
-            <div class="restaurant-actions">
-              <a href="<%= restaurant.website %> ">View Website</a>
-            </div>
-          </article>
+      <% if (numberOfRestaurants === 0) { %>
+        <p>Unfortunately, we have no restaurants yet - maybe start recommending some?</p>
+      <% } else { %>
+        <p>Find your next favorite restaurants with help of our other users!</p>
+        <p>We found <%= numberOfRestaurants %> restaurants.</p>
+        <ul id="restaurants-list">
+          <% for (const restaurant of restaurants) { %>
+            <%- include('includes/restaurants/restaurant-item', {restaurant: restaurant }) %>
           <% } %>
-        </li>
-        <% } %>
-      </ul>
+        </ul>
+      <% } %>
     </main>
   </body>
 </html>
